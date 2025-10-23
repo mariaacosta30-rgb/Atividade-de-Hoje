@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estados e Capitais do Brasil</title>
+    <!-- Incluindo o Tailwind CSS para estilização -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Fonte Inter */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-100 p-4 md:p-8">
+
+    <div class="max-w-5xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
+        <div class="px-6 py-5">
+            <h1 class="text-2xl md:text-3xl font-bold text-gray-800 text-center">Unidades da Federação, Capitais e População</h1>
+            <p class="text-center text-gray-600 mt-2">Dados populacionais baseados no Censo 2022 (IBGE).</p>
+        </div>
+
+        <!-- Container da tabela para permitir rolagem horizontal em telas pequenas -->
+        <div class="overflow-x-auto">
+            <table class="min-w-full divide-y divide-gray-200">
+                <thead class="bg-gray-50">
+                    <tr>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                            Estado (UF)
+                        </th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                            Capital
+                        </th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                            População (Censo 2022)
+                        </th>
+                    </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-gray-200">
+                    <!-- Dados dos 26 estados + DF -->
+                    <tr>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Acre (AC)</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Rio Branco</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">830.026</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Alagoas (AL)</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Maceió</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">3.127.511</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Amapá (AP)</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Macapá</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">733.508</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Amazonas (AM)</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Manaus</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">3.941.175</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Bahia (BA)</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Salvador</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">14.136.417</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Ceará (CE)</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Fortaleza</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">8.791.688</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Distrito Federal (DF)</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Brasília</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">2.817.068</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Espírito Santo (ES)</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Vitória</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">3.833.486</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Goiás (GO)</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Goiânia</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">7.055.228</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Maranhão (MA)</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">São Luís</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">6.775.152</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Mato Grosso (MT)</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Cuiabá</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">3.658.813</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Mato Grosso do Sul (MS)</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Campo Grande</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">2.756.700</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Minas Gerais (MG)</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Belo Horizonte</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">20.538.718</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Pará (PA)</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Belém</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">8.116.132</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Paraíba (PB)</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">João Pessoa</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">3.974.495</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Paraná (PR)</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Curitiba</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">11.443.208</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Pernambuco (PE)</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Recife</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">9.058.155</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Piauí (PI)</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Teresina</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">3.269.200</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Rio de Janeiro (RJ)</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Rio de Janeiro</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">16.054.524</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Rio Grande do Norte (RN)</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Natal</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">3.302.406</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Rio Grande do Sul (RS)</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Porto Alegre</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">10.880.506</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Rondônia (RO)</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Porto Velho</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">1.581.016</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Roraima (RR)</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Boa Vista</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">636.303</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Santa Catarina (SC)</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Florianópolis</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">7.609.601</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">São Paulo (SP)</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">São Paulo</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">44.420.459</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Sergipe (SE)</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Aracaju</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">2.209.558</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Tocantins (TO)</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Palmas</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">1.511.459</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>
